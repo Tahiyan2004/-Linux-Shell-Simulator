@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Main page */
+
+body {
+
+  margin: 0;
+
+  min-height: 100vh;
+
+  background:
+
+    linear-gradient(135deg,
+      #101712,
+      #252d27);
+
+  color: white;
+
+  font-family:
+
+    Arial,
+    sans-serif;
+
+}
+
+
+/* Main application */
+
+.app {
+
+  width:
+
+    min(1100px,
+      95%);
+
+  margin:
+
+    25px auto;
+
+}
+
+
+/* Header */
+
+.topbar {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    center;
+
+  gap: 20px;
+
+  padding:
+
+    18px 22px;
+
+  background:
+
+    #151b18;
+
+  border:
+
+    1px solid #39443d;
+
+  border-radius:
+
+    15px 15px 0 0;
+
+}
+
+
+h1 {
+
+  margin: 0;
+
+  font-size:
+
+    25px;
+
+}
+
+
+.topbar p {
+
+  margin:
+
+    5px 0 0;
+
+  color:
+
+    #aab5ad;
+
+  font-size:
+
+    13px;
+
+}
+
+
+/* Buttons */
+
+.buttons {
+
+  display: flex;
+
+  gap: 8px;
+
+}
+
+
+button {
+
+  background:
+
+    #252e29;
+
+  color:
+
+    white;
+
+  border:
+
+    1px solid #4a5850;
+
+  padding:
+
+    9px 14px;
+
+  border-radius:
+
+    8px;
+
+  cursor:
+
+    pointer;
+
+}
+
+
+button:hover {
+
+  background:
+
+    #3a463f;
+
+}
+
+
+/* Status bar */
+
+.status-bar {
+
+  display: flex;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+
+  padding:
+
+    10px 20px;
+
+  background:
+
+    #0d130f;
+
+  color:
+
+    #9eaca2;
+
+  border:
+
+    1px solid #303c34;
+
+  font-size:
+
+    12px;
+
+}
+
+
+/* Terminal */
+
+#terminal {
+
+  height:
+
+    70vh;
+
+  min-height:
+
+    500px;
+
+  overflow-y:
+
+    auto;
+
+  background:
+
+    #050a07;
+
+  border:
+
+    1px solid #31533a;
+
+  padding:
+
+    20px;
+
+  font-family:
+
+    Consolas,
+    "Courier New",
+    monospace;
+
+  font-size:
+
+    16px;
+
+  line-height:
+
+    1.6;
+
+  box-shadow:
+
+    0 20px 50px rgba(0,
+      0,
+      0,
+      0.7);
+
+}
+
+
+/* Output */
+
+.line {
+
+  white-space:
+
+    pre-wrap;
+
+  word-break:
+
+    break-word;
+
+}
+
+
+.command {
+
+  color:
+
+    #94bd9e;
+
+  margin-top:
+
+    10px;
+
+}
+
+
+.success {
+
+  color:
+
+    #55e878;
+
+}
+
+
+.error {
+
+  color:
+
+    #ff7777;
+
+}
+
+
+.warning {
+
+  color:
+
+    #ffd15c;
+
+}
+
+
+.info {
+
+  color:
+
+    #8ca194;
+
+}
+
+
+/* Input */
+
+.input-line {
+
+  display:
+
+    flex;
+
+  align-items:
+
+    center;
+
+  margin-top:
+
+    8px;
+
+}
+
+
+#prompt {
+
+  color:
+
+    #50e870;
+
+  font-weight:
+
+    bold;
+
+  white-space:
+
+    pre;
+
+}
+
+
+#commandInput {
+
+  flex:
+
+    1;
+
+  min-width:
+
+    0;
+
+  background:
+
+    transparent;
+
+  border:
+
+    none;
+
+  outline:
+
+    none;
+
+  color:
+
+    #e2f8e6;
+
+  font-family:
+
+    Consolas,
+    "Courier New",
+    monospace;
+
+  font-size:
+
+    16px;
+
+  padding-left:
+
+    8px;
+
+}
+
+
+/* Footer */
+
+footer {
+
+  padding:
+
+    13px 20px;
+
+  background:
+
+    #151b18;
+
+  color:
+
+    #a4afa7;
+
+  border-radius:
+
+    0 0 15px 15px;
+
+  font-size:
+
+    13px;
+
+}
+
+
+footer b {
+
+  color:
+
+    #69e987;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .topbar {
+
+    flex-direction:
+
+      column;
+
+    align-items:
+
+      flex-start;
+
+  }
+
+
+  #terminal {
+
+    font-size:
+
+      14px;
+
+  }
+
+}
